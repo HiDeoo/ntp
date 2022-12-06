@@ -1,25 +1,23 @@
 {
-  "name": "@ntp/data",
+  "name": "@ntp/web",
   "version": "0.0.1",
   "license": "MIT",
-  "description": "Pick 7 randoms editor's choice videos from Pixabay",
+  "description": "ntp web client",
   "author": "HiDeoo <github@hideoo.dev> (https://hideoo.dev)",
   "type": "module",
-  "main": "dist/videos.json",
   "scripts": {
-    "build": "tsx src"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "dotenv": "16.0.3",
-    "envsafe": "2.0.3",
-    "lodash.samplesize": "4.2.0"
+    "@ntp/data": "workspace:*",
+    "preact": "10.11.3"
   },
   "devDependencies": {
-    "@ntp/types": "workspace:*",
-    "@types/lodash.samplesize": "4.2.7",
-    "@types/node": "18.11.11",
-    "tsx": "3.12.1",
-    "typescript": "4.9.3"
+    "@preact/preset-vite": "2.4.0",
+    "typescript": "4.9.3",
+    "vite": "3.2.5"
   },
   "engines": {
     "node": ">=18"

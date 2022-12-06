@@ -23,6 +23,13 @@
     "node": ">=18"
   },
   "packageManager": "pnpm@7.18.0",
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@babel/core"
+      ]
+    }
+  },
   "private": true,
   "sideEffects": false,
   "keywords": [],
