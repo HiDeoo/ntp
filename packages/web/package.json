@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "pnpm --filter \"@ntp/data\" build && tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
