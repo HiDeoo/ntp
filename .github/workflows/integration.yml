@@ -47,6 +47,8 @@ jobs:
 
       - name: Build data
         run: pnpm --filter "@ntp/data" build
+        env:
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
 
       - name: Lint
         run: pnpm lint
