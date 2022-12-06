@@ -43,6 +43,17 @@ importers:
       tsx: 3.12.1
       typescript: 4.9.3
 
+  packages/extension:
+    specifiers:
+      '@types/adm-zip': 0.5.0
+      adm-zip: 0.5.9
+      tsx: 3.12.1
+    dependencies:
+      adm-zip: 0.5.9
+    devDependencies:
+      '@types/adm-zip': 0.5.0
+      tsx: 3.12.1
+
   packages/types:
     specifiers: {}
 
@@ -617,6 +628,12 @@ packages:
       picomatch: 2.3.1
     dev: true
 
+  /@types/adm-zip/0.5.0:
+    resolution: {integrity: sha512-FCJBJq9ODsQZUNURo5ILAQueuA8WJhRvuihS3ke2iI25mJlfV2LK8jG2Qj2z2AWg8U0FtWWqBHVRetceLskSaw==}
+    dependencies:
+      '@types/node': 18.11.11
+    dev: true
+
   /@types/json-schema/7.0.11:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==}
     dev: true
@@ -789,6 +806,11 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: true
+
+  /adm-zip/0.5.9:
+    resolution: {integrity: sha512-s+3fXLkeeLjZ2kLjCBwQufpI5fuN+kIGBxu6530nVQZGVol0d7Y/M88/xw9HGGUcJjKf8LutN3VPRUBq6N7Ajg==}
+    engines: {node: '>=6.0'}
+    dev: false
 
   /aggregate-error/3.1.0:
     resolution: {integrity: sha512-4I7Td01quW/RpocfNayFdFVk1qSuoh0E7JrbRJ16nH01HhKFQ88INq9Sd+nd72zqRySlr9BmDA8xlEJ6vJMrYA==}
