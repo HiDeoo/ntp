@@ -1,0 +1,35 @@
+{
+  "name": "@ntp/web",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "ntp web client",
+  "author": "HiDeoo <github@hideoo.dev> (https://hideoo.dev)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ntp/data": "workspace:*",
+    "preact": "10.11.3"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "2.4.0",
+    "typescript": "4.9.3",
+    "vite": "3.2.5"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "pnpm@7.18.0",
+  "private": true,
+  "sideEffects": false,
+  "keywords": [],
+  "homepage": "https://github.com/HiDeoo/ntp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HiDeoo/ntp.git"
+  },
+  "bugs": "https://github.com/HiDeoo/ntp/issues"
+}
