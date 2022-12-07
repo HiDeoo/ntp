@@ -18,4 +18,5 @@ body,
 body {
   background-color: var(--bg-color);
   margin: 0;
+  overflow: hidden;
 }
