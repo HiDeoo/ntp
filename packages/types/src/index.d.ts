@@ -1,6 +1,6 @@
 export interface Video {
   id: number
-  pageUrl: string
-  previewUrl: string
-  videoUrl: string
+  page: string
+  poster: string
+  url: string
 }

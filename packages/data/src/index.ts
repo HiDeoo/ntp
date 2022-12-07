@@ -11,9 +11,9 @@ const videos = await fetchEditorVideos()
 const videosOfTheWeek: Video[] = sampleSize(videos, 7).map((video) => {
   return {
     id: video.id,
-    pageUrl: video.pageURL,
-    previewUrl: getPreviewUrl(video),
-    videoUrl: video.videos.large.size > 0 ? video.videos.large.url : video.videos.medium.url,
+    page: video.pageURL,
+    poster: getPreviewUrl(video),
+    url: video.videos.large.size > 0 ? video.videos.large.url : video.videos.medium.url,
   }
 })
 

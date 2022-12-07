@@ -60,6 +60,7 @@ importers:
   packages/web:
     specifiers:
       '@ntp/data': workspace:*
+      '@ntp/types': workspace:*
       '@preact/preset-vite': 2.4.0
       preact: 10.11.3
       typescript: 4.9.3
@@ -69,6 +70,7 @@ importers:
       '@ntp/data': link:../data
       preact: 10.11.3
     devDependencies:
+      '@ntp/types': link:../types
       '@preact/preset-vite': 2.4.0_preact@10.11.3+vite@3.2.5
       typescript: 4.9.3
       vite: 3.2.5
