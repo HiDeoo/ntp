@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [
     preact(),
     VitePWA({
+      includeAssets: ['images/*', 'robots.txt'],
       manifest: false,
       registerType: 'autoUpdate',
       workbox: {
