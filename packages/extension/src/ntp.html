@@ -11,6 +11,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <style>
+      :root {
+        --page-bg-color: hsl(0 0% 97%);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --page-bg-color: hsl(0 0% 20%);
+        }
+      }
+
+      body {
+        background-color: var(--page-bg-color);
+      }
+
       iframe {
         border: 0;
         height: 100%;
