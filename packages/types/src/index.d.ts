@@ -3,4 +3,6 @@ export interface Video {
   page: string
   poster: string
   url: string
+  tags: string[]
+  user: string
 }

@@ -1,0 +1,47 @@
+.infos {
+  background-color: var(--bg-color);
+  border-radius: 0.25rem;
+  opacity: 0;
+  margin-bottom: 0.75rem;
+  max-width: 300px;
+  padding: 0.75rem 0.9rem;
+  transition-property: opacity;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing);
+}
+
+.visible {
+  opacity: 1;
+}
+
+.infos :is(p, ul) {
+  margin: 0;
+  padding: 0;
+}
+
+.infos a {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+.infos a:hover {
+  text-decoration: none;
+}
+
+.credits {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  font-style: italic;
+  line-height: 1.6rem;
+  list-style-type: none;
+}
+
+.tags li:not(:last-child):after {
+  content: '\00a0-\00a0';
+}

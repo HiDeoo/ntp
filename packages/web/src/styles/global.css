@@ -1,22 +1,27 @@
 :root {
-  --bg-color: #f7f7f7;
+  --page-bg-color: hsl(0 0% 97%);
+  --bg-color: hsl(0 0% 9% / 0.9);
+  --text-color: hsl(0 0% 98%);
+  --tint-color: hsl(217 91% 60%);
+  --animation-duration: 150ms;
+  --animation-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #333333;
+    --page-bg-color: hsl(0 0% 20%);
   }
 }
 
-html,
-body,
-.app {
-  height: 100%;
-  width: 100%;
+body {
+  background-color: var(--page-bg-color);
+  color: var(--text-color);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  line-height: 1.75rem;
+  margin: 0;
 }
 
-body {
-  background-color: var(--bg-color);
-  margin: 0;
-  overflow: hidden;
+::selection {
+  background-color: var(--tint-color);
 }

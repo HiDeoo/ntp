@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@ntp/data": "workspace:*",
+    "clsx": "1.2.1",
     "preact": "10.11.3"
   },
   "devDependencies": {
