@@ -1,10 +1,8 @@
 <div align="center">
-  <h1>ntp 🚧</h1>
-  <p>ntp description</p>
+  <h1>NTP 🌆</h1>
+  <p>HiDeoo's <strong>N</strong>ew <strong>T</strong>ab <strong>P</strong>age</p>
   <p>
-    <a href="https://dummyimage.com/520x350/121212/cdc8be.png&text=screenshot" title="Screenshot of ntp">
-      <img alt="Screenshot of ntp" src="https://dummyimage.com/520x350/121212/cdc8be.png&text=screenshot" width="520" />
-    </a>
+    <video src="https://user-images.githubusercontent.com/494699/206496055-051e6802-1528-4430-9f87-92b71db24ff9.mp4" controls="controls"></video>
   </p>
 </div>
 
@@ -20,10 +18,12 @@
 
 ## Features
 
-ntp presentation.
+I love Edge's New Tab Page video of the day feature, but I do not use any of the other features it provides. With everything else disabled, even tho some requests are cached, it still triggers 70+ requests. It is also impossible to hide the extra search bar, which I do not use that's why I decided to create my own New Tab Page.
 
-- ntp feature 1
-- ntp feature 2
+- Lightweight New Tab Page displaying an [Editor's Choice Pixabay video](https://pixabay.com/editors_choice/?media_type=video).
+- No extra search bar, no top sites, no news, no weather, no clock, no nothing, just a video.
+- The video of the day and the next video are downloaded once and cached using a service worker.
+- The list of videos is refreshed every week.
 
 ## License
 
