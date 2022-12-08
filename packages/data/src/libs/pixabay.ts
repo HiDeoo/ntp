@@ -14,10 +14,6 @@ export async function fetchEditorVideos() {
   return hits
 }
 
-export function getPreviewUrl(video: PixabayVideo) {
-  return `https://i.vimeocdn.com/video/${video.picture_id}_1920x1080.jpg`
-}
-
 function getApiUrl(route: string, params: Record<string, string | string[]> = {}) {
   const url = new URL(`${baseUrl}/${route.replace(/^\//, '')}`)
 

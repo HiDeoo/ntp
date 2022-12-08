@@ -33,7 +33,7 @@ export function Player({ onLoadedData, video }: PlayerProps) {
         loop
         muted
         onLoadedData={handleLoadedData}
-        poster={video.poster}
+        preload="auto"
         ref={player}
       >
         <source src={video.url} type="video/mp4" />
