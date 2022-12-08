@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [
     preact(),
     VitePWA({
+      manifest: false,
       registerType: 'autoUpdate',
       workbox: {
         runtimeCaching: [
