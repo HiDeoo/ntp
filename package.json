@@ -2,7 +2,7 @@
   "name": "@ntp/monorepo",
   "version": "0.0.1",
   "license": "MIT",
-  "description": "",
+  "description": "Lightweight New Tab Page displaying Pixabay videos",
   "author": "HiDeoo <github@hideoo.dev> (https://hideoo.dev)",
   "type": "module",
   "scripts": {
@@ -32,7 +32,16 @@
   },
   "private": true,
   "sideEffects": false,
-  "keywords": [],
+  "keywords": [
+    "new tab page",
+    "ntp",
+    "pixabay",
+    "video",
+    "browser",
+    "extension",
+    "edge",
+    "chrome"
+  ],
   "homepage": "https://github.com/HiDeoo/ntp",
   "repository": {
     "type": "git",

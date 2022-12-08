@@ -2,7 +2,7 @@
   "name": "@ntp/types",
   "version": "0.0.1",
   "license": "MIT",
-  "description": "ntp shared types",
+  "description": "NTP Shared Types",
   "author": "HiDeoo <github@hideoo.dev> (https://hideoo.dev)",
   "type": "module",
   "types": "src/index.d.ts",
@@ -12,7 +12,16 @@
   "packageManager": "pnpm@7.18.0",
   "private": true,
   "sideEffects": false,
-  "keywords": [],
+  "keywords": [
+    "new tab page",
+    "ntp",
+    "pixabay",
+    "video",
+    "browser",
+    "extension",
+    "edge",
+    "chrome"
+  ],
   "homepage": "https://github.com/HiDeoo/ntp",
   "repository": {
     "type": "git",

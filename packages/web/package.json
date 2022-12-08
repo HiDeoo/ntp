@@ -2,7 +2,7 @@
   "name": "@ntp/web",
   "version": "0.0.1",
   "license": "MIT",
-  "description": "ntp web client",
+  "description": "NTP Web Client",
   "author": "HiDeoo <github@hideoo.dev> (https://hideoo.dev)",
   "type": "module",
   "scripts": {
@@ -28,7 +28,16 @@
   "packageManager": "pnpm@7.18.0",
   "private": true,
   "sideEffects": false,
-  "keywords": [],
+  "keywords": [
+    "new tab page",
+    "ntp",
+    "pixabay",
+    "video",
+    "browser",
+    "extension",
+    "edge",
+    "chrome"
+  ],
   "homepage": "https://github.com/HiDeoo/ntp",
   "repository": {
     "type": "git",

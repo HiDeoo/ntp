@@ -27,7 +27,16 @@
   "packageManager": "pnpm@7.18.0",
   "private": true,
   "sideEffects": false,
-  "keywords": [],
+  "keywords": [
+    "new tab page",
+    "ntp",
+    "pixabay",
+    "video",
+    "browser",
+    "extension",
+    "edge",
+    "chrome"
+  ],
   "homepage": "https://github.com/HiDeoo/ntp",
   "repository": {
     "type": "git",
