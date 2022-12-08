@@ -35,7 +35,7 @@ export function Overlay({ visible, onOverlayStateChange, video }: OverlayProps) 
   }
 
   return (
-    <div className={clsx(styles['overlay'], visible && styles['visible'])}>
+    <div className={clsx(styles['overlay'], visible && styles['visible'], showInfos && styles['infos'])}>
       <Infos ref={popup} video={video} visible={showInfos} />
       <menu className={styles['menu']}>
         <li>

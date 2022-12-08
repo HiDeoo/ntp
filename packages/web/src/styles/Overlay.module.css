@@ -36,8 +36,15 @@
 .button svg {
   display: block;
   fill: var(--text-color);
+  opacity: 0.65;
 }
 
-.button:is(:hover, :focus-visible) svg {
+.button:hover svg,
+.overlay.infos svg {
+  opacity: 1;
+}
+
+.button:focus-visible svg {
   fill: var(--tint-color);
+  opacity: 1;
 }

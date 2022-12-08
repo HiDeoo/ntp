@@ -1,6 +1,6 @@
 :root {
   --page-bg-color: hsl(0 0% 97%);
-  --bg-color: hsl(0 0% 9% / 0.9);
+  --bg-color: hsl(0 0% 9% / 0.7);
   --text-color: hsl(0 0% 98%);
   --tint-color: hsl(217 91% 60%);
   --animation-duration: 150ms;
