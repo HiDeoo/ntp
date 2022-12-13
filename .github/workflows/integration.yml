@@ -45,10 +45,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Build data
-        run: pnpm --filter "@ntp/data" build
-        env:
-          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
-
       - name: Lint
         run: pnpm lint
+        env:
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}

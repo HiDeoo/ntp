@@ -6,6 +6,9 @@
   "author": "HiDeoo <github@hideoo.dev> (https://hideoo.dev)",
   "type": "module",
   "types": "src/index.d.ts",
+  "scripts": {
+    "lint": "prettier -c . && eslint . --cache --max-warnings=0 && tsc --noEmit"
+  },
   "engines": {
     "node": ">=18"
   },

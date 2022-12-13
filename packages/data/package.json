@@ -7,7 +7,9 @@
   "type": "module",
   "main": "dist/videos.json",
   "scripts": {
-    "build": "tsx src"
+    "dev": "tsx watch --clear-screen=false src",
+    "build": "tsx src",
+    "lint": "prettier -c . && eslint . --cache --max-warnings=0 && tsc --noEmit"
   },
   "dependencies": {
     "dotenv": "16.0.3",

@@ -6,7 +6,8 @@
   "author": "HiDeoo <github@hideoo.dev> (https://hideoo.dev)",
   "type": "module",
   "scripts": {
-    "build": "tsx src"
+    "build": "tsx src",
+    "lint": "prettier -c . && eslint . --cache --max-warnings=0 && tsc --noEmit"
   },
   "dependencies": {
     "adm-zip": "0.5.9"
