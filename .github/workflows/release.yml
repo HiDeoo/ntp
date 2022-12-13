@@ -1,0 +1,21 @@
+name: Release
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  integration:
+    name: Integration
+    uses: ./.github/workflows/integration.yml
+
+  publish:
+    name: Publish
+    needs:
+      - integration
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy web app
+        run: curl -X POST -d {} ${{ secrets.DEPLOY_HOOK }}
