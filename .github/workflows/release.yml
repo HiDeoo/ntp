@@ -10,6 +10,7 @@ jobs:
   integration:
     name: Integration
     uses: ./.github/workflows/integration.yml
+    secrets: inherit
 
   publish:
     name: Publish
