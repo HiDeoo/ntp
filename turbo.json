@@ -5,9 +5,6 @@
     "build": {
       "dependsOn": ["^build"]
     },
-    "@ntp/data#build": {
-      "cache": false
-    },
     "dev": {
       "cache": false
     },
