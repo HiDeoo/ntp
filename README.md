@@ -2,7 +2,7 @@
   <h1>NTP 🌆</h1>
   <p>HiDeoo's <strong>N</strong>ew <strong>T</strong>ab <strong>P</strong>age</p>
   <p>
-    <video src="https://user-images.githubusercontent.com/494699/206496055-051e6802-1528-4430-9f87-92b71db24ff9.mp4" controls="controls"></video>
+    <video src="https://user-images.githubusercontent.com/494699/207637607-f78bc624-d708-4a82-8762-9ece81b62780.mp4" controls="controls"></video>
   </p>
 </div>
 
