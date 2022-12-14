@@ -1,4 +1,5 @@
 import { type Video } from '@ntp/types'
+import clsx from 'clsx'
 import { useRef, useState } from 'preact/hooks'
 
 import styles from '../styles/Player.module.css'
@@ -28,7 +29,7 @@ export function Player({ onLoadedData, video }: PlayerProps) {
     <>
       <video
         autoPlay
-        className={styles['player']}
+        className={clsx(styles['player'], isVideoLoaded && styles['visible'])}
         disablePictureInPicture
         loop
         muted
