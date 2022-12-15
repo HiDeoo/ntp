@@ -1,6 +1,6 @@
 {
   "name": "@ntp/monorepo",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "license": "MIT",
   "description": "Lightweight New Tab Page displaying Pixabay videos",
   "author": "HiDeoo <github@hideoo.dev> (https://hideoo.dev)",
