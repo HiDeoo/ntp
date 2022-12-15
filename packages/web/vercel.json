@@ -3,5 +3,8 @@
   "buildCommand": "cd ../.. && pnpm run build --filter=@ntp/web --force",
   "git": {
     "deploymentEnabled": false
+  },
+  "github": {
+    "silent": true
   }
 }
