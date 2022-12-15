@@ -1,0 +1,14 @@
+name: Build
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 0 * * SUN'
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update web application
+        run: curl -X POST -d {} ${{ secrets.DEPLOY_HOOK }}
