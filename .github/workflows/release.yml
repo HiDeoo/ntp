@@ -66,7 +66,7 @@ jobs:
         run: |
           sleep 5s
           id=$(curl -sL --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' https://api.github.com/repos/HiDeoo/ntp/releases/latest | jq -r '.id')
-          echo "::set-output name=id::$id"
+          echo "RELEASE_ID=$id" >> $GITHUB_OUTPUT
         shell: bash
 
       - name: Upload release artifacts
@@ -75,4 +75,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           file: 'packages/extension/dist/ntp-extension-*.zip'
-          release_id: ${{ steps.release-id.outputs.id }}
+          release_id: ${{ steps.release-id.outputs.RELEASE_ID }}
