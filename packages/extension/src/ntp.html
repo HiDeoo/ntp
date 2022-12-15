@@ -31,6 +31,7 @@
       }
 
       iframe {
+        background-color: var(--page-bg-color);
         border: 0;
         height: 100%;
         inset: 0;
@@ -38,11 +39,21 @@
         overflow: hidden;
         padding: 0;
         position: fixed;
+        visibility: hidden;
         width: 100%;
       }
     </style>
   </head>
   <body>
-    <iframe src="https://hideoo-ntp.vercel.app">Your browser does not support iframes.</iframe>
+    <iframe onload="onLoad()" src="https://hideoo-ntp.vercel.app">Your browser does not support iframes.</iframe>
+    <script>
+      function onLoad() {
+        const iframe = document.querySelector('iframe')
+
+        if (iframe) {
+          iframe.style.visibility = 'visible'
+        }
+      }
+    </script>
   </body>
 </html>
