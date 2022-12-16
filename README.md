@@ -24,6 +24,7 @@ I love Edge's New Tab Page video of the day feature, but I do not use any of the
 - No extra search bar, no top sites, no news, no weather, no clock, no nothing, just a video.
 - The video of the day and the next video are downloaded once and cached using a service worker.
 - The list of videos is refreshed every week.
+- Specific videos can be blocked using a tiny API hosted on a Cloudflare Worker.
 
 ## License
 

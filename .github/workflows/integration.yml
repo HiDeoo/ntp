@@ -51,4 +51,6 @@ jobs:
       - name: Lint
         run: pnpm lint
         env:
+          NTP_API_KEY: ${{ secrets.NTP_API_KEY }}
+          NTP_API_URL: ${{ secrets.NTP_API_URL }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
