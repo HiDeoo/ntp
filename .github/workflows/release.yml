@@ -17,6 +17,12 @@ jobs:
       - integration
     runs-on: ubuntu-latest
     steps:
+      - name: Deploy API
+        uses: cloudflare/wrangler-action@2.0.0
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          workingDirectory: 'packages/api'
+
       - name: Deploy web application
         run: curl -X POST -d {} ${{ secrets.DEPLOY_HOOK }}
 

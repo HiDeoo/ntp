@@ -1,0 +1,7 @@
+name = "ntp-api"
+main = "src/index.ts"
+compatibility_date = "2022-12-15"
+
+kv_namespaces = [
+  { binding = "KV", id = "9230685869684b42a667d6572d44a4c6", preview_id = "c66616fec408432891f3afe42dd0a4a6" },
+]

@@ -33,18 +33,18 @@
   padding: 0.25rem;
 }
 
-.button svg {
+.button > svg {
   display: block;
   fill: var(--text-color);
   opacity: 0.65;
 }
 
-.button:hover svg,
-.overlay.infos svg {
+.button:hover > svg,
+.overlay.infos .button > svg {
   opacity: 1;
 }
 
-.button:focus-visible svg {
+.button:focus-visible > svg {
   fill: var(--tint-color);
   opacity: 1;
 }
