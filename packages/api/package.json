@@ -7,6 +7,7 @@
   "type": "module",
   "scripts": {
     "dev": "wrangler dev",
+    "lint": "prettier -c . && eslint . --cache --max-warnings=0 && tsc --noEmit",
     "deploy": "wrangler publish"
   },
   "dependencies": {
