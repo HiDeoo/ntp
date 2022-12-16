@@ -57,6 +57,10 @@ jobs:
           command: publish
           workingDirectory: 'packages/api'
 
+      # https://github.com/shumbo/Svadilfari/issues/44
+      - name: Fix `.wrangler` directory permissions
+        run: sudo chown -R $(id -un):$(id -gn) ${{ github.workspace }}
+
       - name: Deploy web application
         run: curl -X POST -d {} ${{ secrets.DEPLOY_HOOK }}
 
