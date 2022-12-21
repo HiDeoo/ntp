@@ -10,7 +10,7 @@ export async function getBlockedVideos() {
 
     return (await response.json()) as number[]
   } catch (error) {
-    console.error(`Failed to fetch blocked videos: ${error}`)
+    console.error(new Error('Failed to fetch blocked videos.', { cause: error }))
 
     return []
   }
