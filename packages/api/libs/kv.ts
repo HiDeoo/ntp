@@ -16,7 +16,7 @@ export async function getBlockedVideos(env: Env): Promise<Videos> {
   try {
     return JSON.parse(rawBlockedVideos) as Video['id'][]
   } catch (error) {
-    throw new Error(`Failed to parse blocked videos: ${error}`)
+    throw new Error(`Failed to parse blocked videos${error instanceof Error ? `: ${error.message}` : ''}`)
   }
 }
 

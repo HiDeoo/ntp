@@ -12,7 +12,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@hideoo/eslint-config": "0.13.0",
+    "@hideoo/eslint-config": "0.14.1",
     "@hideoo/prettier-config": "0.1.1",
     "@hideoo/tsconfig": "0.1.0",
     "eslint": "8.29.0",
