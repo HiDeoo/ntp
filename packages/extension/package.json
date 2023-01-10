@@ -1,6 +1,6 @@
 {
   "name": "@ntp/extension",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "license": "MIT",
   "description": "NTP Browser Extension",
   "author": "HiDeoo <github@hideoo.dev> (https://hideoo.dev)",
