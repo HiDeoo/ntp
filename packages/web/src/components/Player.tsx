@@ -30,6 +30,7 @@ export function Player({ onLoadedData, video }: PlayerProps) {
       <video
         autoPlay
         className={clsx(styles['player'], isVideoLoaded && styles['visible'])}
+        crossOrigin="anonymous"
         disablePictureInPicture
         loop
         muted

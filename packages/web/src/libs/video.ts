@@ -1,6 +1,6 @@
 import videos from '@ntp/data'
 
-import { isResourceCached } from './sw'
+import { cacheResource, videoCacheName } from './sw'
 
 const currentDay = new Date().getDay()
 
@@ -14,18 +14,14 @@ export async function cacheNextVideo() {
     return
   }
 
-  const [isVideoCached, isNextVideoCached] = await Promise.all([
-    isResourceCached('videos', currentVideo.url),
-    isResourceCached('videos', nextVideo.url),
-  ])
+  await cacheVideo(currentVideo.url, 'current')
+  await cacheVideo(nextVideo.url, 'next')
+}
 
-  if (!isVideoCached || isNextVideoCached) {
-    return
-  }
-
+async function cacheVideo(videoUrl: string, label: string) {
   try {
-    await fetch(nextVideo.url, { mode: 'no-cors' })
+    await cacheResource(videoCacheName, videoUrl)
   } catch (error) {
-    console.error(`Failed to cache next video at '${nextVideo.url}'`, error)
+    console.error(`Failed to cache ${label} video at '${videoUrl}'`, error)
   }
 }

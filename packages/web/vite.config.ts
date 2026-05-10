@@ -20,8 +20,9 @@ export default defineConfig({
                 maxEntries: 2,
               },
               cacheableResponse: {
-                statuses: [0, 200],
+                statuses: [200],
               },
+              rangeRequests: true,
             },
           },
         ],

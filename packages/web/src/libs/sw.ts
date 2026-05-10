@@ -1,10 +1,15 @@
-export async function isResourceCached(cacheName: string, resourceUri: string) {
+export const videoCacheName = 'videos'
+
+export async function cacheResource(cacheName: string, resourceUri: string) {
   if ('serviceWorker' in navigator === false || 'caches' in window === false) {
-    return false
+    return
   }
 
   const cache = await caches.open(cacheName)
-  const response = await cache.match(resourceUri)
 
-  return response !== undefined
+  if (await cache.match(resourceUri)) {
+    return
+  }
+
+  await cache.add(new Request(resourceUri, { credentials: 'same-origin', mode: 'cors' }))
 }
