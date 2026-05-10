@@ -6,16 +6,23 @@ const currentDay = new Date().getDay()
 
 export const currentVideo = videos[currentDay]
 
-export async function cacheNextVideo() {
-  const nextDay = currentDay + 1 > 6 ? 0 : currentDay + 1
-  const nextVideo = videos[nextDay]
-
-  if (!currentVideo || !nextVideo) {
+export function cacheVideos() {
+  if (!currentVideo) {
     return
   }
 
-  await cacheVideo(currentVideo.url, 'current')
-  await cacheVideo(nextVideo.url, 'next')
+  void cacheCurrentThenNextVideo(currentVideo.url)
+}
+
+async function cacheCurrentThenNextVideo(currentVideoUrl: string) {
+  await cacheVideo(currentVideoUrl, 'current')
+
+  const nextDay = currentDay + 1 > 6 ? 0 : currentDay + 1
+  const nextVideo = videos[nextDay]
+
+  if (nextVideo) {
+    await cacheVideo(nextVideo.url, 'next')
+  }
 }
 
 async function cacheVideo(videoUrl: string, label: string) {

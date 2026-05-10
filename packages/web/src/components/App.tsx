@@ -1,4 +1,4 @@
-import { cacheNextVideo, currentVideo } from '../libs/video'
+import { cacheVideos, currentVideo } from '../libs/video'
 
 import { Player } from './Player'
 
@@ -7,5 +7,5 @@ export function App() {
     return null
   }
 
-  return <Player onLoadedData={cacheNextVideo} video={currentVideo} />
+  return <Player onLoadedData={cacheVideos} video={currentVideo} />
 }
