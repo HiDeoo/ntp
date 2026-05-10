@@ -7,6 +7,9 @@ module.exports = {
         tsconfigRootDir: __dirname,
         project: ['packages/*/tsconfig.json'],
       },
+      rules: {
+        'import/no-named-as-default': 'off',
+      },
     },
   ],
 }
